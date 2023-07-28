@@ -1,0 +1,283 @@
+html{
+  scroll-behavior: smooth;
+}
+
+  body {
+ margin: 0;
+ padding: 0;
+    overflow-x: hidden;
+    background-color: #DDE6ED;
+    scroll-behavior: smooth;
+    
+  }
+.page1{
+  margin: 0;
+  padding: 0;
+ background-color:#DDE6ED;
+ overflow: hidden;
+ 
+}
+  .head {
+    margin-top: 6vw;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3em;
+    margin-left: 16vw;
+    font-weight: 900;
+    background: #00ADB5;
+    background: linear-gradient(0deg, rgba(80, 145, 170, 0.7158119495098407) 0%,#27374D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .headyy {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 900;
+    background: #00ADB5;
+    background: linear-gradient(0deg, rgba(80, 145, 170, 0.7158119495098407) 0%, 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  #spin {
+    color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-left: 16vw;
+    z-index: 1000;
+
+  }
+
+  #spin:after {
+    content: "";
+    animation: spin 8s linear infinite;
+    text-decoration: n
+  }
+
+  @keyframes spin {
+    0% {
+      content: "Fast speeds";
+    }
+
+    40% {
+      content: "Portable";
+    }
+
+    20% {
+      content: "General purpose";
+    }
+
+    65% {
+      content: "Rich functions";
+    }
+
+    89% {
+      content: "Student friendly";
+    }
+
+    95% {
+      content: "Build in operators";
+    }
+
+    100% {
+      content: "General purpose";
+    }
+
+    65% {
+      content: "Most basic";
+    }
+
+    75% {
+      content: "Beginner friendly";
+    }
+
+    85% {
+      content: "Father of language";
+    }
+
+    95% {
+      content: "Beast";
+    }
+
+    100% {
+      content: ".";
+    }
+  }
+
+  .box {
+     position: relative;
+     opacity: .3;
+    width: 70vh auto 0 auto;
+    max-width: 600px;
+    max-height: 300px;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    height: 87vw;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 10px -1px rgba(0, 0.5, 0.3, 1);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 8px );
+-webkit-backdrop-filter: blur( 14px );
+
+animation: text-focus-in .4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in .4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  }
+
+@keyframes box{
+  0% {
+    -webkit-filter: blur(5px);
+            filter: blur(7px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+.box:hover{
+  
+  height: 87.3vw;
+}
+@media only screen and (max-width: 768px) and (min-width: 320px){ 
+.imgon{ 
+display: none;  
+margin-right: -12px;
+}  
+}
+#imh{
+  margin-left: 60vw;
+  margin-top: -40vh
+  
+}
+ 
+.box2 {
+  position: relative;
+  opacity: .3;
+ width: 7vh auto 0 auto;
+ max-width: 600px;
+ z-index: 1;
+ right: 0;
+ bottom: 0;
+ height: auto;
+ overflow: scroll;
+ overflow-x: hidden;
+ overflow-y: hidden;
+ display: flex;
+margin-left: auto;
+margin-right: auto;
+ align-items: center;
+ justify-content: center;
+ box-shadow: 0 10px 10px -1px rgba(0, 0.5, 0.3, 1);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 8px );
+-webkit-backdrop-filter: blur( 14px );
+
+animation: text-focus-in 2.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+       animation: text-focus-in 2.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+  .btn1 {
+    width: 10rem;
+    text-align: center;
+    border: 1px solid black;
+    height: 3rem;
+    border-radius:50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 2rem;
+    cursor: pointer;
+    display: table;
+    justify-content: flex-right;
+    transition: 0.5s;
+    margin-right: auto;
+    margin-left: auto;
+   }
+ 
+  .btn1:hover{
+    color: green;
+    width: 11rem;
+  }
+  .GeneratedMarquee {
+font-family:Verdana, sans-serif;
+font-size:1.8em;
+font-weight:bold;
+font-variant:small-caps;
+line-height:1.3em;
+text-align:center;
+padding:1.5rem;
+}
+.page2{
+  background-image: url("shrestha/bg.gif");
+ 
+  
+}
+
+
+  .logo{
+    position: fixed;   
+     margin-top: .01vh;
+    left: 1%;
+    margin-left: .01vw;
+    width: 20%;
+  scale: .4;
+  }
+  .textlogo
+  {
+ 
+    margin-top: 9vw;
+    left: 13.7%;
+position: fixed;
+ font-weight: 900;
+  }
+
+.credit a {
+  color: #1a292c;
+  text-transform: lowercase;
+}
+
+
+h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+ background: #00ADB5;
+ background: linear-gradient(0deg, rgba(80, 145, 170, 0.7158119495098407) 0%,#27374D 100%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: -20%;
+  left: 5%;
+  width: 80%;
+  height: 50%;
+  z-index: 99;
+  display: block;
+  place-items: center;
+}
+
+/*footer.css*/

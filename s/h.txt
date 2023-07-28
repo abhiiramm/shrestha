@@ -1,0 +1,158 @@
+Learn C Programming in 4 Hours and Boost Your Career
+C is one of the most powerful and versatile programming languages in the world. It is used to create operating systems, embedded systems, games, web servers, databases, and more. C is also the foundation of many modern languages like C++, Java, Python, and C#.
+
+But learning C can be challenging and time-consuming. You need a clear and concise course that teaches you the essential concepts and skills of C programming without wasting your time on unnecessary details or boring exercises.
+
+That’s why we created this course: Learn C Programming in 4 Hours. This course is designed for university students who want to learn C programming quickly and effectively. You will learn the basics of C syntax, data types, operators, control structures, functions, pointers, arrays, strings, file handling, and dynamic memory allocation. You will also learn how to use C to solve real-world problems and write efficient and elegant code.
+
+By the end of this course, you will have a solid understanding of C programming and be able to apply it to your own projects. You will also gain confidence and credibility as a programmer and increase your chances of landing a job or advancing your career.
+
+This course is taught by experienced instructors who have years of industry experience and academic credentials. They will guide you through the course with clear explanations, practical examples, and helpful tips. You will also get access to quizzes, assignments, and projects to test your knowledge and skills.
+
+But don’t take our word for it. Here’s what some of our students have to say about this course:
+
+“This course was amazing! I learned so much in just 4 hours. The instructors were very clear and engaging. I highly recommend this course to anyone who wants to learn C programming.” - Priya K., Computer Science Student
+“I was skeptical at first about learning C in such a short time, but this course proved me wrong. It covered all the important topics and concepts in a simple and easy way. I feel more confident and comfortable with C now.” - Ravi S., Electrical Engineering Student
+“This course was a lifesaver for me. I had to take a C programming exam for my university and I had no prior experience with C. This course helped me prepare for the exam and pass it with flying colors. Thank you so much!” - Arjun M., Mechanical Engineering Student
+So what are you waiting for? Enroll now and start learning C programming today!
+
+
+he 4-Hour C Programming Masterclass
+The Only C Programming Course You’ll Ever Need: <br>Learn in 4 Hours and Become a Pro
+
+
+we are riding together to find the page 
+edit email
+request demo at payment page 
+floating btn 
+record data 
+mail randomm number and transaction to verify 
+upload the document or
+20 admissions
+random names dont worry
+admin login
+screen capture using mdn web docs
+mute participants 
+participants login only if admin verify btn email credentials 
+not live yet enter the training ground 
+<?php include 'menu.html'; ?>
+
+
+why c programming 
+payment page 
+pay 
+validate your payment and get login details
+        <input type="submit" value="logout" onclick="window.location='logout.php';" class="btn"><br><br>
+
+ payment JS ALERT
+ $conn = mysqli_connect("localhost", "root", "", "shrestha");
+   // $sql = "DELETE FROM regisupi WHERE ip=$row1";
+
+    if (mysqli_query($conn, $sql)) {
+        echo "Row deleted successfully.";
+    } else {
+        echo "Error deleting row: " . mysqli_error($conn);
+    }
+    mysqli_close($conn);
+    die;
+
+
+
+
+
+    $sql = "SELECT user_id FROM regisupi";
+$conn = mysqli_connect("localhost", "root", "", "shrestha");
+$result = mysqli_query($conn, $sql);
+
+
+            $message = "dear $name, your request is rejected maybe there is a fault in the "UPI" number or maybe a fault from our end we are extremely sorry to see you in this situation you can contact us on the website or dm us 8891325175 on ";
+
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	$name = $_POST["name"];
+	$email = $_POST["email"];
+	$message = $_POST["message"];
+
+$to = 'shresthabussiness@gmail.com';
+$subject = "contact us form response";
+$message = "my name is $name  . $message";
+$headers = array(
+    'Authorization: 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',
+    'Content-Type: application/json'
+);
+$data = array(
+    'personalizations' => array(
+        array(
+            'to' => array(
+                array(
+                    'email' => $to
+                )
+            )
+        )
+    ),
+    'from' => array(
+        'email' => 'shresthabussiness@gmail.com'
+    ),
+    'subject' => $subject,
+    'content' => array(
+        array(
+            'type' => 'text/plain',
+            'value' => $message
+        )
+    )
+);
+
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, 'https://api.sendgrid.com/v3/mail/send');
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$response = curl_exec($ch);
+curl_close($ch);
+
+if ($response === false) {
+    echo "Email sending failed.";
+} else {
+    echo "response have been recorded sucessfully successfully!";
+}
+}
+chqvnkjtwgpwweaq
+        echo "<input type='submit' value='delete' onclick="window.location.href='public\phpmailer\delete.php'">";
+
+
+ $conn = mysqli_connect("localhost", "root", "", "shrestha");
+    $sql = "DELETE FROM regisupi WHERE user_id=$value";
+    $id = mysqli_query($conn, "SELECT user_id FROM regisupi where user_id=$value");
+    $name = mysqli_query($conn, "SELECT name FROM regisupi where user_id=$value");
+    $upi = mysqli_query($conn, "SELECT upi FROM regisupi where user_id=$value");
+    $email = mysqli_query($conn, "SELECT email FROM regisupi where user_id=$value");
+
+    if (mysqli_query($conn, $sql)) {
+        echo "Row deleted successfully.";
+    } else {
+        echo "Error deleting row: " . mysqli_error($conn);
+    }
+
+
+
+function delete($value)
+{
+    echo $value;
+    // session_start();
+    //$_SESSION['variable_name'] = $value;
+    //sleep(3);
+    //include 'phpmailer/delete.php';
+    $conn = mysqli_connect("localhost", "root", "", "shrestha");
+    $sql = "DELETE FROM regisupi WHERE user_id=$value";
+    if (mysqli_query($conn, $sql)) {
+        echo "Row deleted successfully.";
+    } else {
+        echo "Error deleting row: " . mysqli_error($conn);
+    }
+    die;
+}
+
+
+

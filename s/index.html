@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>shrestha c programming</title>
+  <link rel="stylesheet" href="public\style.css" type="text/css" />
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/jquery-ui.min.css" rel="stylesheet">
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+
+</head>
+<style>
+
+</style>
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.4
+    };
+
+    // IMAGE ANIMATION
+
+    let revealCallback = (entries) => {
+      entries.forEach((entry) => {
+        let container = entry.target;
+
+        if (entry.isIntersecting) {
+          console.log(container);
+          container.classList.add("animating");
+          return;
+        }
+
+        if (entry.boundingClientRect.top > 0) {
+          container.classList.remove("animating");
+        }
+      });
+    };
+
+    let revealObserver = new IntersectionObserver(revealCallback, options);
+
+    document.querySelectorAll(".reveal").forEach((reveal) => {
+      revealObserver.observe(reveal);
+    });
+
+    // TEXT ANIMATION
+
+    let fadeupCallback = (entries) => {
+      entries.forEach((entry) => {
+        let container = entry.target;
+        container.classList.add("not-fading-up");
+
+        if (entry.isIntersecting) {
+          container.classList.add("fading-up");
+          return;
+        }
+
+        if (entry.boundingClientRect.top > 0) {
+          container.classList.remove("fading-up");
+        }
+      });
+    };
+
+    let fadeupObserver = new IntersectionObserver(fadeupCallback, options);
+
+    document.querySelectorAll(".fadeup").forEach((fadeup) => {
+      fadeupObserver.observe(fadeup);
+    });
+  });
+
+</script>
+
+<body>
+  <img src="image/Logo4.png" class="logo">
+  <div class="textlogo">SHRESTHA EDU.</div>
+
+  <br><br><br><br><br><br><br><br><br><br>
+
+  <div class="page1">
+
+    <div class="head">The 4-Hour KTU <br>C Programming Masterclass</div><br>
+    <div>
+      <span id="spin"></span>
+    </div><br><br>
+    <br><br>
+    <div class="box">
+
+    </div>
+    <a  class="btn1" style="text-decoration: none;" type="button" href="payments\index.html"><span class="btntext">REGISTER NOW!</span></a>
+    <div class="imgopen">
+      <img src="image\Land.svg" id="imh" style="object-fit: cover">
+    </div>
+    <br><br>
+    <div class="flex">
+      <form>
+        
+    </div>
+  </div>
+  <div>
+    </form>
+    <marquee class="GeneratedMarquee" direction="left" scrollamount="15sec" behavior="scroll">
+      SHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHASHRESTHA
+    </marquee>
+
+    <style>
+      * {box-sizing: border-box}
+      body {font-family: Verdana, sans-serif; margin:0}
+      
+      /* Slideshow container */
+      .slideshow-container {
+        position: relative;
+        box-shadow: 0 10px 10px -1px rgba(0, 0.5, 0.3, 1);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 8px );
+-webkit-backdrop-filter: blur( 14px );
+
+animation: text-focus-in .4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in .4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+      }
+      
+      /* Slides */
+      .mySlides {
+        display: none;
+        padding: 80px;
+        text-align: center;
+      }
+      
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -30px;
+        padding: 16px;
+        color: #888;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        position: absolute;
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+      }
+      
+      /* The dot/bullet/indicator container */
+      .dot-container {
+          text-align: center;
+          padding: 20px;
+          background: #ddd;
+      }
+      
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      /* Add a background color to the active dot/circle */
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+      /* Add an italic font style to all quotes */
+      q {font-style: italic;}
+      
+      /* Add a blue color to the author */
+      .author {color: cornflowerblue;}
+      </style>
+      </head>
+      <body>
+      
+      <div class="slideshow-container">
+      
+      <div class="mySlides">
+        <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+        <p class="author">- John Keats</p>
+      </div>
+      
+      <div class="mySlides">
+        <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+        <p class="author">- Ernest Hemingway</p>
+      </div>
+      
+      <div class="mySlides">
+        <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+        <p class="author">- Thomas A. Edison</p>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      
+      
+      <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+    <br><br><br>
+  </div>
+  <script> 
+    $(function(){
+      ("#includedContent").load("public\footer.html"); 
+    });
+    </script> 
+  <div id="includedContent"></div>
+  <div class="page2">
+      <a type="button" style="text-decoration: none;" href="payments\index.html" class="btn1">Get now!</a>
+    </form>
+
+    <br><br><br>
+    <div class="headyy">""SHRESTHA EDU.""</div>
+    <a type="button" style="text-decoration: none;" href="public\contact.php" class="btn1">contact us
+    </a>
+    <br><br><br><br>
+  </div>
+
+</body>
+
+</html>
